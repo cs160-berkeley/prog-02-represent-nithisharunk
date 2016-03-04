@@ -8,7 +8,7 @@ Nithish Arunkumar ([nithisharunk@berkeley.edu](mailto:your_email@berkeley.edu))
 
 ## Demo Video
 
-See CS160 Prog-02B Represent! (https://youtu.be/kKaw78eycX8)
+See The Campaign Trail (https://youtu.be/kKaw78eycX8)
 
 ## Screenshots
 
