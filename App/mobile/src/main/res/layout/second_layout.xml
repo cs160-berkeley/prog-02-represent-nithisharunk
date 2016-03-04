@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" android:gravity="center_vertical">
+
+
+    <TableRow android:paddingTop="3dp">
+        <ImageView android:id="@+id/image1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingLeft="2dip"
+            android:paddingRight="5dip" android:src="@drawable/blee"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Barbara Lee"
+                android:id="@+id/textView5"
+                android:textStyle="bold"
+                android:paddingTop="10dp" />
+
+            <TextView android:id="@+id/partyText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:text="Democrat"
+                android:textColor="#225bf9" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="-Email-"
+                        android:id="@+id/textView13"
+                        android:textSize="14dp"
+                        android:paddingTop="19dp"
+                        android:textStyle="italic"
+                        android:clickable="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="-Website-"
+                        android:id="@+id/textView14"
+                        android:clickable="true"
+                        android:textSize="14dp"
+                        android:paddingLeft="15dp"
+                        android:textStyle="italic" />
+
+                </TableRow>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="-More-"
+                android:id="@+id/textView15"
+                android:clickable="true"
+                android:onClick="moreDetails"
+                android:textStyle="italic"
+                android:textSize="14dp"
+                android:paddingTop="79dp"
+                android:paddingLeft="13dp" />
+        </LinearLayout>
+
+
+    </TableRow>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="93dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Latest Tweet:"
+            android:id="@+id/textView17"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Americans want &amp; deserve a #budget that helps hard-working families succeed. @HouseGOP&apos;s budget is still nowhere to be found."
+            android:id="@+id/textView16"
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:background="#4099ff"
+            android:textColor="#ffffff"
+            android:paddingBottom="5dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="and"
+        android:id="@+id/textView18"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:paddingBottom="3dp"
+        android:background="#000000"
+        android:textColor="#ffffff" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingLeft="2dip"
+            android:paddingRight="5dip"
+            android:id="@+id/imageView2"
+            android:src="@drawable/dfeinstein"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Dianne Feinstein"
+                android:id="@+id/textView6"
+                android:textStyle="bold"
+                android:paddingTop="10dp" />
+
+            <TextView android:id="@+id/partyText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:text="Democrat"
+                android:textColor="#225bf9" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="-Email-"
+                        android:id="@+id/textView19"
+                        android:textSize="14dp"
+                        android:paddingTop="19dp"
+                        android:textStyle="italic"
+                        android:clickable="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="-Website-"
+                        android:id="@+id/textView20"
+                        android:clickable="true"
+                        android:textSize="14dp"
+                        android:paddingLeft="15dp"
+                        android:textStyle="italic" />
+
+                </TableRow>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="-More-"
+                android:id="@+id/textView21"
+                android:clickable="true"
+                android:onClick="moreDetails"
+                android:textStyle="italic"
+                android:textSize="14dp"
+                android:paddingTop="79dp"
+                android:paddingLeft="13dp" />
+        </LinearLayout>
+    </TableRow>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="76dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Latest Tweet:"
+            android:id="@+id/textView22"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Kalamazoo and Hesston shootings provide yet another call for Congress to act to #StopGunViolence."
+            android:id="@+id/textView24"
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:background="#4099ff"
+            android:textColor="#ffffff"
+            android:paddingBottom="5dp" />
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="and"
+            android:id="@+id/textView23"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:paddingBottom="3dp"
+            android:background="#000000"
+            android:textColor="#ffffff" />
+
+        <TableRow android:paddingTop="5dp">
+        <ImageView android:id="@+id/image3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingLeft="2dip"
+            android:paddingRight="5dip" android:src="@drawable/bboxer"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Barbara Boxer"
+                android:id="@+id/textView25"
+                android:textStyle="bold"
+                android:paddingTop="10dp" />
+
+            <TextView android:id="@+id/partyText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:text="Democrat"
+                android:textColor="#225bf9" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="-Email-"
+                        android:id="@+id/textView26"
+                        android:textSize="14dp"
+                        android:paddingTop="19dp"
+                        android:textStyle="italic"
+                        android:clickable="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="-Website-"
+                        android:id="@+id/textView27"
+                        android:clickable="true"
+                        android:textSize="14dp"
+                        android:paddingLeft="15dp"
+                        android:textStyle="italic" />
+
+                </TableRow>
+            </LinearLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="-More-"
+                    android:id="@+id/textView28"
+                    android:clickable="true"
+                    android:onClick="moreDetails"
+                    android:textStyle="italic"
+                    android:textSize="14dp"
+                    android:paddingTop="79dp"
+                    android:paddingLeft="13dp" />
+            </LinearLayout>
+        </TableRow>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="76dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Latest Tweet:"
+                android:id="@+id/textView29"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="The families in #Flint, in Jackson, and in every community threatened by #lead in their #drinkingwater deserve action now #CleanWater"
+                android:id="@+id/textView30"
+                android:textSize="14dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:background="#4099ff"
+                android:textColor="#ffffff"
+                android:paddingBottom="10dp" />
+
+        </LinearLayout>
+
+        <!--<ImageView-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="170dp"-->
+            <!--android:src= "@drawable/seal"-->
+            <!--android:id="@+id/imageView4"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_below="@+id/button" />-->
+
+</TableLayout>
+    </ScrollView>
+
+
+</TableLayout>
