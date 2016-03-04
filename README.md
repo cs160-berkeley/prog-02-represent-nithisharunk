@@ -18,3 +18,5 @@ See The Campaign Trail (https://youtu.be/kKaw78eycX8)
 
 * Hat tip to anyone who's code was used
 * Any other support
+Thanks to Paul Trebilcox-Ruiz: https://www.binpress.com/tutorial/a-guide-to-the-android-wear-message-api/152
+Thanks to Mahendra: http://stackoverflow.com/questions/2317428/android-i-want-to-shake-it
