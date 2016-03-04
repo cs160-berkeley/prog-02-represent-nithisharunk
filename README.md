@@ -8,7 +8,7 @@ Nithish Arunkumar ([nithisharunk@berkeley.edu](mailto:your_email@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See CS160 Prog-02B Represent! (https://youtu.be/kKaw78eycX8)
 
 ## Screenshots
 
