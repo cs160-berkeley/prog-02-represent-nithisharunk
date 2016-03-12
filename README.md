@@ -14,6 +14,7 @@ See The Campaign Trail (https://youtu.be/kM-mxMfpEWM)
 
 <img src="screenshots/main" height="400" alt="Screenshot"/>
 
+
 ## Acknowledgments
 Thanks to Yoel Nunez on Youtube for his tutorial on using APIs
 Thanks to Alex from UPE for being the goto reference for all Android issues
