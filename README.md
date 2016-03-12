@@ -12,7 +12,7 @@ See The Campaign Trail (https://youtu.be/kM-mxMfpEWM)
 
 ## Screenshots
 
-<img src="screenshots/main.jpg" height="400" alt="Screenshot"/>
+<img src="screenshots/main.png" height="400" alt="Screenshot"/>
 
 
 ## Acknowledgments
