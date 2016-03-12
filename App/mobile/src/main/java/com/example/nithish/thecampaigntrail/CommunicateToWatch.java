@@ -63,6 +63,8 @@ public class CommunicateToWatch extends WearableListenerService implements Googl
     public void onMessageReceived(MessageEvent messageEvent) {
         String newpath = messageEvent.getPath();
         byte[] newcommunication = messageEvent.getData();
+        String toPrint = new String(newcommunication);
+        String[] results = toPrint.split(",\\s*");
 
         System.out.println("Message was received.");
         System.out.println(newpath);
@@ -72,6 +74,11 @@ public class CommunicateToWatch extends WearableListenerService implements Googl
 
             Intent startDetailActivity = new Intent(getBaseContext(), ThirdActivity.class);
             startDetailActivity.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startDetailActivity.putExtra("bioguide", results[2]);
+            startDetailActivity.putExtra("name", results[0]);
+            startDetailActivity.putExtra("party", results[1]);
+            startDetailActivity.putExtra("date", results[3]);
+            startDetailActivity.putExtra("endpoint", results[4]);
             startActivity(startDetailActivity);
         }
 
@@ -82,8 +89,11 @@ public class CommunicateToWatch extends WearableListenerService implements Googl
 
     }
 
+
+
     @Override
     public void onConnected(Bundle bundle) {
+
         new Thread(new Runnable() {
             @Override
             public void run() {

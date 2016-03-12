@@ -20,8 +20,9 @@
         <ImageView android:id="@+id/image1"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:paddingTop="5dp"
             android:paddingLeft="2dip"
-            android:paddingRight="5dip" android:src="@drawable/blee"/>
+            android:paddingRight="5dip"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -32,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Barbara Lee"
+                android:text="@string/rep_name1"
                 android:id="@+id/textView5"
                 android:textStyle="bold"
                 android:paddingTop="10dp" />
@@ -42,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
                 android:textSize="16dp"
-                android:text="Democrat"
+                android:text="@string/party1"
                 android:textColor="#225bf9" />
 
             <LinearLayout
@@ -52,7 +53,8 @@
 
                 <TableRow
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:onClick="displayEmail1">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -74,7 +76,8 @@
                         android:clickable="true"
                         android:textSize="14dp"
                         android:paddingLeft="15dp"
-                        android:textStyle="italic" />
+                        android:textStyle="italic"
+                        android:onClick="openWeb" />
 
                 </TableRow>
             </LinearLayout>
@@ -97,7 +100,9 @@
                 android:textStyle="italic"
                 android:textSize="14dp"
                 android:paddingTop="79dp"
-                android:paddingLeft="13dp" />
+                android:paddingLeft="13dp"
+                android:password="false"
+                android:phoneNumber="true" />
         </LinearLayout>
 
 
@@ -122,7 +127,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Americans want &amp; deserve a #budget that helps hard-working families succeed. @HouseGOP&apos;s budget is still nowhere to be found."
+            android:text="@string/tweet1"
             android:id="@+id/textView16"
             android:textSize="14dp"
             android:paddingLeft="10dp"
@@ -155,8 +160,9 @@
             android:layout_height="100dp"
             android:paddingLeft="2dip"
             android:paddingRight="5dip"
+            android:paddingTop="5dp"
             android:id="@+id/imageView2"
-            android:src="@drawable/dfeinstein"/>
+            />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -167,7 +173,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Dianne Feinstein"
+                android:text="@string/rep_name2"
                 android:id="@+id/textView6"
                 android:textStyle="bold"
                 android:paddingTop="10dp" />
@@ -177,7 +183,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
                 android:textSize="16dp"
-                android:text="Democrat"
+                android:text="@string/party2"
                 android:textColor="#225bf9" />
 
             <LinearLayout
@@ -198,7 +204,9 @@
                         android:textSize="14dp"
                         android:paddingTop="19dp"
                         android:textStyle="italic"
-                        android:clickable="true" />
+                        android:clickable="true"
+                        android:onClick="displayEmail2"
+                        android:password="false" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -209,7 +217,8 @@
                         android:clickable="true"
                         android:textSize="14dp"
                         android:paddingLeft="15dp"
-                        android:textStyle="italic" />
+                        android:textStyle="italic"
+                        android:onClick="openWeb2" />
 
                 </TableRow>
             </LinearLayout>
@@ -228,7 +237,7 @@
                 android:text="-More-"
                 android:id="@+id/textView21"
                 android:clickable="true"
-                android:onClick="moreDetails"
+                android:onClick="moreDetails2"
                 android:textStyle="italic"
                 android:textSize="14dp"
                 android:paddingTop="79dp"
@@ -239,7 +248,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="76dp">
+        android:layout_height="93dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -255,7 +264,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Kalamazoo and Hesston shootings provide yet another call for Congress to act to #StopGunViolence."
+            android:text="@string/tweet2"
             android:id="@+id/textView24"
             android:textSize="14dp"
             android:paddingLeft="10dp"
@@ -282,8 +291,9 @@
         <ImageView android:id="@+id/image3"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:paddingTop="5dp"
             android:paddingLeft="2dip"
-            android:paddingRight="5dip" android:src="@drawable/bboxer"/>
+            android:paddingRight="5dip"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -294,7 +304,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Barbara Boxer"
+                android:text="@string/rep_name3"
                 android:id="@+id/textView25"
                 android:textStyle="bold"
                 android:paddingTop="10dp" />
@@ -304,7 +314,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
                 android:textSize="16dp"
-                android:text="Democrat"
+                android:text="@string/party3"
                 android:textColor="#225bf9" />
 
             <LinearLayout
@@ -325,7 +335,8 @@
                         android:textSize="14dp"
                         android:paddingTop="19dp"
                         android:textStyle="italic"
-                        android:clickable="true" />
+                        android:clickable="true"
+                        android:onClick="displayEmail3" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -336,7 +347,8 @@
                         android:clickable="true"
                         android:textSize="14dp"
                         android:paddingLeft="15dp"
-                        android:textStyle="italic" />
+                        android:textStyle="italic"
+                        android:onClick="openWeb3" />
 
                 </TableRow>
             </LinearLayout>
@@ -354,7 +366,7 @@
                     android:text="-More-"
                     android:id="@+id/textView28"
                     android:clickable="true"
-                    android:onClick="moreDetails"
+                    android:onClick="moreDetails3"
                     android:textStyle="italic"
                     android:textSize="14dp"
                     android:paddingTop="79dp"
@@ -365,7 +377,7 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="76dp">
+            android:layout_height="93dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -381,7 +393,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="The families in #Flint, in Jackson, and in every community threatened by #lead in their #drinkingwater deserve action now #CleanWater"
+                android:text="@string/tweet3"
                 android:id="@+id/textView30"
                 android:textSize="14dp"
                 android:paddingLeft="10dp"
@@ -392,14 +404,7 @@
 
         </LinearLayout>
 
-        <!--<ImageView-->
-            <!--android:layout_width="70dp"-->
-            <!--android:layout_height="170dp"-->
-            <!--android:src= "@drawable/seal"-->
-            <!--android:id="@+id/imageView4"-->
-            <!--android:layout_alignParentBottom="true"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:layout_below="@+id/button" />-->
+
 
 </TableLayout>
     </ScrollView>

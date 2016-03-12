@@ -27,21 +27,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Alameda County,"
+            android:text="Alameda County, CA"
             android:id="@+id/textView8"
             android:textColor="#423f3f"
-            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="33dp"
             android:textSize="15dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="CA"
-            android:id="@+id/textView9"
-            android:textColor="#423f3f"
-            android:textSize="15dp"
-            android:layout_marginLeft="15dp" />
     </TableRow>
 
     <TableRow

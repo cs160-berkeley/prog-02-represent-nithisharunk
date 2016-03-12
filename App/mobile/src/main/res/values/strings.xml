@@ -1,4 +1,22 @@
 <resources>
     <string name="app_name">The Campaign Trail</string>
     <string name="action_settings">Settings</string>
+    <string name="rep_name1">Name1</string>
+    <string name="rep_name2">Name2</string>
+    <string name="rep_name3">Name3</string>
+    <string name="detailRepName">Name</string>
+    <string name="detailParty">Party</string>
+    <string name="detailDate">Date</string>
+    <string name="comm1">Committee1</string>
+    <string name="comm2">Committee2</string>
+    <string name="comm3">Committee3</string>
+    <string name="bill1">Bill1</string>
+    <string name="bill2">Bill2</string>
+    <string name="bill3">Bill3</string>
+    <string name="party2">Party2</string>
+    <string name="party3">Party3</string>
+    <string name="party1">Party1</string>
+    <string name="tweet1">Tweet1</string>
+    <string name="tweet2">Tweet2</string>
+    <string name="tweet3">Tweet3</string>
 </resources>

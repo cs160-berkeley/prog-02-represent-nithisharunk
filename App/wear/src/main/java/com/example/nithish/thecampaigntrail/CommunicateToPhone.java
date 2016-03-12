@@ -12,6 +12,8 @@ import com.google.android.gms.wearable.NodeApi;
 import com.google.android.gms.wearable.Wearable;
 import com.google.android.gms.wearable.WearableListenerService;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 
 /**
@@ -72,15 +74,37 @@ public class CommunicateToPhone extends WearableListenerService implements Googl
     public void onMessageReceived(MessageEvent messageEvent) {
         String newpath = messageEvent.getPath();
         byte[] newcommunication = messageEvent.getData();
+        String toPrint = new String(newcommunication);
+        String[] results = toPrint.split( ",\\s*" );
 
         System.out.println("Message was received.");
         System.out.println(newpath);
-        System.out.println(newcommunication);
+        System.out.println(results[1] + results[15] + results[16]);
 
         if (newpath.equals("/NEXT SCREEN")){
 
             Intent startRepListActivity = new Intent(getBaseContext(), repListActivity.class);
             startRepListActivity.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startRepListActivity.putExtra("rep1", results[0]);
+            startRepListActivity.putExtra("rep2", results[1]);
+            startRepListActivity.putExtra("rep3", results[2]);
+            startRepListActivity.putExtra("party1", results[3]);
+            startRepListActivity.putExtra("party2", results[4]);
+            startRepListActivity.putExtra("party3", results[5]);
+            startRepListActivity.putExtra("bioguide1", results[6]);
+            startRepListActivity.putExtra("bioguide2", results[7]);
+            startRepListActivity.putExtra("bioguide3", results[8]);
+            startRepListActivity.putExtra("date1", results[9]);
+            startRepListActivity.putExtra("date2", results[10]);
+            startRepListActivity.putExtra("date3", results[11]);
+            startRepListActivity.putExtra("endpoint1", results[12]);
+            startRepListActivity.putExtra("endpoint2", results[13]);
+            startRepListActivity.putExtra("endpoint3", results[14]);
+            startRepListActivity.putExtra("obamap", results[15]);
+            startRepListActivity.putExtra("romney", results[16]);
+            startRepListActivity.putExtra("county", results[17]);
+
+
             startActivity(startRepListActivity);
         }
 

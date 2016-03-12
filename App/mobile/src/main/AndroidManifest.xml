@@ -4,6 +4,10 @@
 
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
 
 
 
@@ -32,9 +36,16 @@
         </service>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD2w6NaQPf3HUDddW9bYPKr7tX3PeSrqeI"/>
+
         <!-- Listeners are special services that need to be declared like below, as BIND_LISTENER -->
         <activity android:name=".SecondActivity" />
         <activity android:name=".ThirdActivity" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e971b50ff75c6d6ad17fed31eb3f4bb47b3288c2" />
     </application>
 
 </manifest>
